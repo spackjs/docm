@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website",
+    "website-1.x",
+    "packages/docm-init/templates/*"
+  ],
+  "scripts": {
+    "start": "yarn tsc && yarn start:v2",
+    "start:v2": "yarn workspace docm-2-website start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spackjs/docm.git"
+  },
+  "author": "Wei Changhua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spackjs/docm/issues"
+  },
+  "homepage": "https://github.com/spackjs/docm#readme",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
